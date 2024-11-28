@@ -171,3 +171,49 @@ button:disabled {
   border-color: #dc3545;
   color: #dc3545;
 }
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 20px;
+    max-width: 100%; /* Make container full-width */
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  p, label {
+    font-size: 1em;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* Desktop Styling */
+@media (min-width: 768px) {
+  body::before {
+    /* Animation should only be visible on larger screens */
+    display: block;
+  }
+
+  .container {
+    /* Keep the container well-sized on desktop */
+    max-width: 800px;
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  button {
+    font-size: 1.2em;
+  }
+}
